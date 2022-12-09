@@ -63,6 +63,22 @@ export const statesObj: { [key: string]: any } = {
 	},
 };
 
+export const cheapestObj: { [key: string]: any } = {
+	cheapest_stations: {
+		type: 'state',
+		common: {
+			name: 'all Cheapest Stations',
+			desc: 'all Cheapest Stations as Array',
+			type: 'string',
+			role: 'json',
+			def: '',
+			read: true,
+			write: false,
+		},
+		native: {},
+	},
+};
+
 export const priceObj: { [key: string]: any } = {
 	'3rd': {
 		type: 'state',
@@ -200,6 +216,28 @@ export const priceMinMaxObj: { [key: string]: any } = {
 			role: 'state',
 			def: 0,
 			unit: '€',
+			read: true,
+			write: false,
+		},
+		native: {},
+	},
+	lastUpdate_min: {
+		type: 'state',
+		common: {
+			type: `number`,
+			role: `value.time`,
+			def: 0,
+			read: true,
+			write: false,
+		},
+		native: {},
+	},
+	lastUpdate_max: {
+		type: 'state',
+		common: {
+			type: `number`,
+			role: `value.time`,
+			def: 0,
 			read: true,
 			write: false,
 		},

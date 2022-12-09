@@ -6,9 +6,13 @@ declare global {
 		interface AdapterConfig {
 			synctime: number;
 			resetValues: boolean;
-			noLogs: boolean;
 			apikey: string;
 			station: Station[];
+			combinedOptions: {
+				closed: string;
+				noPrice: string;
+				notFound: string;
+			};
 		}
 
 		interface Station {

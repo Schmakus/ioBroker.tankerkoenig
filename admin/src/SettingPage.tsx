@@ -5,12 +5,12 @@ import { AdapterInterval } from './component/AdapterInterval';
 import { AddModal } from './Modal/AddModal';
 import { AlertComponent } from './component/AlertComponent';
 import { ApiKey } from './component/ApiKey';
-import { LogSettings } from './component/LogSettings';
 import { Spacer } from './component/Spacer';
 import { StationCard } from './component/StationCard';
 import { EditModal } from './Modal/EditModal';
 import { PriceSettings } from './component/PriceSettings';
 import { Logo } from 'iobroker-react';
+import { VisCombinedOptions } from './component/VisCombinedOptions';
 
 interface SettingPageProps {
 	onChange: (key: keyof ioBroker.AdapterConfig, value: any) => void;
@@ -141,10 +141,10 @@ export const SettingPage: React.FC<SettingPageProps> = ({ onChange, settings }):
 				<ApiKey settings={settings} onChange={(key, value) => onChange(key, value)} />
 				<Spacer text={'spacerInterval'} />
 				<AdapterInterval onChange={onChange} settings={settings} />
+				<Spacer text={'combined_settings'} />
+				<VisCombinedOptions onChange={onChange} settings={settings} />
 				<Spacer text={'price_settings'} />
 				<PriceSettings onChange={onChange} settings={settings} />
-				<Spacer text={'adapter_log_settings'} />
-				<LogSettings onChange={onChange} settings={settings} />
 			</TabPanel>
 			<TabPanel value={value} index={1}>
 				<Grid
@@ -164,7 +164,13 @@ export const SettingPage: React.FC<SettingPageProps> = ({ onChange, settings }):
 						open={editModal.open}
 						onClose={() => setEditModal({ index: null, open: false })}
 					/>
-					<Tooltip title={_('tooltipAddStation')} arrow placement={'top'}>
+					<Tooltip
+						title={_('tooltipAddStation')}
+						arrow
+						placement={'top'}
+						enterNextDelay={500}
+						enterDelay={500}
+					>
 						<Button
 							variant="contained"
 							size="large"

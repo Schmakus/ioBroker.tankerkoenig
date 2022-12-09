@@ -1,94 +1,72 @@
 {
   "common": {
     "name": "tankerkoenig",
-    "version": "3.0.2",
+    "version": "3.1.0",
     "news": {
-      "3.0.2": {
-        "en": "release new version from Tankerkoenig",
-        "de": "neue Version von Tankerkoenig veröffentlichen",
-        "ru": "выпустить новую версию от Tankerkoenig",
-        "pt": "lança nova versão do Tankerkoenig",
-        "nl": "release nieuwe versie van Tankerkoenig",
-        "fr": "publie une nouvelle version de Tankerkoenig",
-        "it": "rilascia una nuova versione da Tankerkoenig",
-        "es": "liberar la nueva versión de Tankerkoenig",
-        "pl": "wydanie nowej wersji z Tankerkoenig",
-        "uk": "випустити нову версію від Tankerkoenig",
-        "zh-cn": "发布Tankerkoenig的新版本"
+      "3.1.0": {
+        "en": "removed noLog option because the adapter log output was strongly optimized\nOptimized sorting of the cheapest gas station [issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nadd new state `cheapest_stations` for the cheapest gas station [issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "de": "noLog-Option entfernt, da die Log-Ausgabe des Adapters stark optimiert wurde\nOptimierte Sortierung der billigsten Tankstelle [issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nneuen Status `cheapest_stations` für die billigste Tankstelle hinzugefügt [issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "ru": "удалена опция noLog, поскольку вывод журнала адаптера был сильно оптимизирован\nОптимизирована сортировка самой дешевой заправки [выпуск #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nдобавлено новое состояние `cheapest_stations` для самой дешевой автозаправочной станции [выпуск #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "pt": "removeu a opção noLog porque a saída do log do adaptador foi fortemente optimizada\nSeparação optimizada da estação de serviço mais barata [edição #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nadiciona novas estações de serviço de estado `cheapest_stations` para a estação de serviço mais barata [edição #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "nl": "noLog optie verwijderd omdat de logboekuitvoer van de adapter sterk geoptimaliseerd was\nSortering van het goedkoopste tankstation geoptimaliseerd [issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nnieuwe staat `goedkoopste_stations` toegevoegd voor het goedkoopste tankstation [issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "fr": "rimosso l'opzione noLog perché l'output del log dell'adattatore era fortemente ottimizzato\nOttimizzato l'ordinamento della stazione di servizio più economica [issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\naggiunto il nuovo stato `cheapest_stations` per la stazione di servizio più economica [issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "it": "rimosso l'opzione noLog perché l'uscita del registro dell'adattatore è stata fortemente ottimizzata\nOttimizzazione della stazione di servizio più economica [problema #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\naggiungere nuove statistiche per la stazione a gas più economica [problema #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/problems/93)",
+        "es": "eliminada la opción noLog porque la salida del registro del adaptador estaba muy optimizada\nOptimizada la ordenación de la gasolinera más barata [problema #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nañadir un nuevo estado `puestos_más_baratos` para la gasolinera más barata [problema #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "pl": "usunięcie opcji noLog, ponieważ wyjście dziennika adaptera było mocno zoptymalizowane\nZoptymalizowano sortowanie najtańszych stacji benzynowych [issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\ndodanie nowego stanu `cheapest_stations` dla najtańszych stacji benzynowych [issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "uk": "видалено опцію noLog, оскільки виведення логу адаптера було сильно оптимізовано\nоптимізовано сортування найдешевших АЗС [випуск #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\nдодано новий стан `cheapest_stations` для найдешевшої АЗС [випуск #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)",
+        "zh-cn": "移除noLog选项，因为适配器的日志输出已被强烈优化。\n优化了最便宜的加油站的排序[issue #96](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/96)\n为最便宜的加油站添加新的状态`cheapest_stations`[issue #93](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/93)"
       },
-      "3.0.1": {
-        "de": "Datenpunkte Löschfunktion hinzugefügt\nresetValue-Funktion entfernt und Zustandsqualität implementiert. [issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nFunktion hinzugefügt => Werte auf 0 setzen, wenn die Station geschlossen wird.\nAbhängigkeiten aktualisiert",
-        "en": "added function to delete data points\nremoved resetValue function and implemented state quality. [issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nAdded function => set values to 0 when station is closed.\nDependencies updated",
-        "ru": "добавлена функция удаления точек данных\nубрал функцию resetValue и реализовал качество состояния. [issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nДобавлена функция => установка значений в 0 при закрытии станции.\nОбновлены зависимости",
-        "pt": "função adicionada para apagar pontos de dados\nremovido função resetValue e implementada qualidade de estado. [Edição #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nFunção adicionada => define valores para 0 quando a estação está fechada.\nDependências actualizadas",
-        "nl": "functie toegevoegd om datapunten te verwijderen\nfunctie resetValue verwijderd en toestandskwaliteit geïmplementeerd. [issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nFunctie toegevoegd => waarden op 0 zetten als station wordt gesloten.\nAfhankelijkheden bijgewerkt",
-        "fr": "a ajouté une fonction pour supprimer les points de données\na supprimé la fonction resetValue et implémenté la qualité de l'état. [problème #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nAjouté la fonction => mettre les valeurs à 0 lorsque la station est fermée.\nDépendances mises à jour",
-        "it": "aggiunta la funzione per cancellare i punti dati\nrimosso la funzione resetValue e implementato la qualità dello stato. [problema #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nAggiunta la funzione => imposta i valori a 0 quando la stazione è chiusa.\nDipendenze aggiornate",
-        "es": "añadida la función de borrar puntos de datos\nse ha eliminado la función resetValue y se ha implementado la calidad del estado. [tema #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nAñadida la función => poner los valores a 0 cuando se cierra la estación.\nDependencias actualizadas",
-        "pl": "dodano funkcję usuwania punktów danych\nusunięto funkcję resetValue i wprowadzono jakość stanu. [issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nDodano funkcję => ustawiaj wartości na 0, gdy stacja jest zamknięta.\nZależności zaktualizowane",
-        "uk": "додано функцію видалення точок даних\nприбрано функцію resetValue та реалізовано якість стану. [випуск #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\nДодано функцію => встановлення значень в 0 при закритті станції.\nОновлені залежності",
-        "zh-cn": "增加了删除数据点的功能\n删除了resetValue函数，实现了状态质量。[issue #79](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/79)\n增加了函数=>当车站关闭时，将值设置为0。\n更新了依赖性"
+      "3.0.6": {
+        "en": "Added new option to adjust the text in the combined data point [issue #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "de": "Neue Option zur Anpassung des Textes im combined Datenpunkt hinzugefügt [Ausgabe #95] (https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "ru": "Добавлена новая опция для настройки текста в combined точке данных [выпуск #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "pt": "Adicionada nova opção para ajustar o texto no combined data point [edição #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "nl": "Nieuwe optie toegevoegd om de tekst in het combined datapunt aan te passen [issue #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "fr": "Ajout d'une nouvelle option pour ajuster le texte dans le point de données combined [problème #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "it": "Aggiunta una nuova opzione per regolare il testo del punto dati combined [issue #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "es": "Se ha añadido una nueva opción para ajustar el texto en el punto de datos combined [edición #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "pl": "Dodano nową opcję dostosowania tekstu w punkcie danych combined [issue #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "uk": "Додано нову опцію для коригування тексту в combined точці даних [випуск #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)",
+        "zh-cn": "增加了新的选项来调整 combined 数据点中的文字[issue #95](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/95)"
       },
-      "3.0.0": {
-        "de": "BREAKING Adapter Code komplett überarbeitet \nAdapter komplett auf TypeScript umgestellt\nBREAKING Adapter Konfigurationsseite auf React umgestellt und neu gestaltet (alte Konfiguration nicht kompatibel, Stationen müssen neu erstellt werden) \nDependabot Auto-Merge-Unterstützung hinzugefügt\nTest- und Freigabeskript hinzugefügt\nDependenz aktualisiert\nFeature Request hinzufügen: alle Stationen manuell aktualisieren (eine Anfrage pro Minute erlaubt) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nEinen neuen Status hinzugefügt => adapterStatus hinzu (zeigt an, ob der Adapter eine automatische oder eine manuelle Anfrage ausführt)\nEine neue cutPrice Funktion hinzugefügt [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nFeature Request hinzufügen: Rabatt in den Preis einbeziehen (Euro und Prozent) [issue #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) und Adapter Code optimieren\nFeature-Request hinzufügen: JsonTable für Visum [Ausgabe #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "en": "BREAKING Adapter code completely reworked \nAdapter completely changed to TypeScript\nBREAKING Adapter configuration page switched to React and redesigned (old configuration not compatible, stations need to be recreated) \nDependabot auto-merge support added\nTest and release script added\nDependency updated\nAdded feature request: update all stations manually (one request per minute allowed) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nAdded a new status => add adapterStatus (indicates whether the adapter performs an automatic or a manual request)\nAdded a new cutPrice function [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nAdded feature request: Include discount in price (euro and percent) [issue #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) and optimize adapter code\nAdd Feature Request: JsonTable for visa [issue #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "ru": "BREAKING Код адаптера полностью переработан \nАдаптер полностью перешел на TypeScript\nBREAKING Страница конфигурации адаптера перешла на React и была переработана (старая конфигурация несовместима, станции нужно создавать заново) \nДобавлена поддержка автоматического слияния Dependabot\nДобавлен скрипт тестирования и выпуска\nОбновлены зависимости\nДобавлен запрос функции: обновлять все станции вручную (разрешен один запрос в минуту) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nДобавлен новый статус => add adapterStatus (указывает, выполняет ли адаптер автоматический или ручной запрос)\nДобавлена новая функция cutPrice [выпуск #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nДобавлен запрос функции: Включать скидку в цену (в евро и процентах) [выпуск #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) и оптимизировать код адаптера\nДобавьте запрос на возможность: JsonTable для визы [выпуск #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "pt": "Código do Adaptador BREAKING completamente retrabalhado \nAdaptador completamente alterado para TypeScript\nBREAKING A página de configuração do adaptador mudou para Reagir e redesenhado (configuração antiga não compatível, as estações precisam de ser recriadas) \nAdicionado suporte de auto-fusão Dependabot\nAdicionado o guião de teste e lançamento\nDependência actualizada\nPedido de recurso adicionado: atualizar todas as estações manualmente (um pedido por minuto permitido) [edição #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nAdicionado um novo estado => add adapterStatus (indica se o adaptador executa um pedido automático ou manual)\nAdicionada uma nova função CutPrice [edição #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nPedido de funcionalidade adicionada: Incluir desconto no preço (euro e percentagem) [edição #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) e optimizar o código do adaptador\nAdicionar Pedido de Funcionalidade: JsonTable para visto [edição #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "nl": "BREAKING Adaptercode volledig herwerkt \nAdapter volledig veranderd naar TypeScript\nBREAKING Adapter configuratiepagina overgeschakeld naar React en opnieuw ontworpen (oude configuratie niet compatibel, stations moeten opnieuw gemaakt worden) \nDependabot auto-merge ondersteuning toegevoegd\nTest en release script toegevoegd\nAfhankelijkheid bijgewerkt\nFunctieverzoek toegevoegd: alle stations handmatig bijwerken (één verzoek per minuut toegestaan) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nEen nieuwe status toegevoegd => adapterStatus toevoegen (geeft aan of de adapter een automatisch of een handmatig verzoek uitvoert)\nNieuwe functie cutPrice toegevoegd [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nFunctieverzoek toegevoegd: Korting opnemen in prijs (euro en procent) [issue #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) en adaptercode optimaliseren\nFeature Request toegevoegd: JsonTable voor visa [issue #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "fr": "BREAKING Le code de l'adaptateur a été complètement retravaillé \nAdaptateur complètement changé en TypeScript\nBREAKING La page de configuration de l'adaptateur est passée à React et a été remaniée (l'ancienne configuration n'est pas compatible, les stations doivent être recréées) \nLe support de l'auto-fusion de Dependabot a été ajouté\nScript de test et de lancement ajouté\nDépendance mise à jour\nAjout d'une demande de fonctionnalité : mettre à jour toutes les stations manuellement (une demande par minute autorisée) [problème #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nAjout d'un nouveau statut => ajouter adapterStatus (indique si l'adaptateur effectue une demande automatique ou manuelle)\nAjout d'une nouvelle fonction cutPrice [numéro 73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nAjout d'une demande de fonctionnalité : Inclure la remise dans le prix (euro et pourcentage) [numéro 50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) et optimiser le code de l'adaptateur.\nAjout d'une demande de fonctionnalité : JsonTable pour le visa [numéro 24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "it": "BREAKING Codice dell'adattatore completamente rielaborato \nL'adattatore è passato completamente a TypeScript\nBREAKING La pagina di configurazione dell'adattatore è passata a React e ridisegnata (la vecchia configurazione non è compatibile, le stazioni devono essere ricreate) \nAggiunto il supporto per l'auto-merge di Dependabot\nAggiunto lo script di test e rilascio\nAggiornamento delle dipendenze\nAggiunta richiesta di funzionalità: aggiornamento manuale di tutte le stazioni (è consentita una richiesta al minuto) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nAggiunto un nuovo stato => add adapterStatus (indica se l'adattatore esegue una richiesta automatica o manuale)\nAggiunta una nuova funzione cutPrice [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nAggiunta una richiesta di funzionalità: Includere lo sconto nel prezzo (euro e percentuale) [issue #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) e ottimizzare il codice dell'adattatore\nAggiunta richiesta di funzionalità: Tabella Json per i visti [problema #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "es": "BREAKING Código del adaptador completamente rehecho \nAdaptador completamente cambiado a TypeScript\nBREAKING Página de configuración del adaptador cambiada a React y rediseñada (la antigua configuración no es compatible, hay que recrear las estaciones) \nSe ha añadido la compatibilidad con la fusión automática de Dependabot\nSe ha añadido un script de prueba y lanzamiento\nSe ha actualizado la dependencia\nSe ha añadido una petición de función: actualizar todas las estaciones manualmente (se permite una petición por minuto) [cuestión #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nAñadido un nuevo estado => add adapterStatus (indica si el adaptador realiza una petición automática o manual)\nSe ha añadido una nueva función cutPrice [tema #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nAñadida una petición de función: Incluir el descuento en el precio (euro y porcentaje) [tema #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) y optimizar el código del adaptador\nAñadir solicitud de función: JsonTable para el visado [cuestión #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "pl": "BREAKING Kod adaptera całkowicie przerobiony \nAdapter został całkowicie zmieniony na TypeScript\nBREAKING Strona konfiguracyjna adaptera została przeniesiona do React i przeprojektowana (stara konfiguracja nie jest kompatybilna, stacje muszą być odtworzone) \nDodano wsparcie dla Dependabot auto-merge\nDodano skrypt testowy i zwalniający\nZaktualizowano zależności\nDodano żądanie funkcji: ręczna aktualizacja wszystkich stacji (dozwolone jedno żądanie na minutę) [issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nDodano nowy status => add adapterStatus (wskazuje, czy adapter wykonuje żądanie automatyczne czy ręczne)\nDodano nową funkcję cutPrice [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nDodano prośbę o dodanie funkcji: Uwzględnienie rabatu w cenie (w euro i procentach) [kwestia #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) i optymalizacja kodu adaptera\nDodanie feature request: JsonTable dla wiz [issue #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "uk": "Код адаптера повністю перероблено \nАдаптер повністю змінено на TypeScript\nСторінка конфігурації адаптера переведена на React та перероблена (стара конфігурація не сумісна, станції потрібно створювати заново) \nДодано підтримку автоматичного злиття Dependabot\nДодано тестовий та релізний скрипт\nОновлена залежність\nДодано функцію запиту: оновити всі станції вручну (дозволено один запит на хвилину) [випуск #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\nДодано новий статус => add adapterStatus (вказує на те, чи виконує адаптер автоматичний чи ручний запит)\nДодано нову функцію cutPrice [випуск #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\nДодана можливість запиту: Включення знижки в ціну (євро та відсотки) [випуск #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) та оптимізація коду адаптера\nДодано запит на функціональність: JsonTable для візи [випуск #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)",
-        "zh-cn": "BREAKING 适配器代码完全重写 \n适配器完全改成TypeScript\nBREAKING 适配器配置页面切换到React并重新设计（旧的配置不兼容，站点需要重新创建）。\n增加了对Dependabot自动合并的支持\n增加了测试和发布脚本\n更新了依赖关系\n增加了功能请求：手动更新所有站点（每分钟允许一个请求）[issue #53](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/53)\n添加了一个新的状态=>添加适配器状态（表示适配器执行自动或手动请求）。\n增加了一个新的cutPrice函数 [issue #73](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/73)\n增加了功能请求。在价格中包括折扣（欧元和百分比） [issue #50](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/50) 并优化适配器代码\n添加功能请求。用于签证的JsonTable [issue #24](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/24)"
+      "3.0.5": {
+        "en": "fixed sort bug for cheapest gas station",
+        "de": "Sortierfehler für billigste Tankstelle behoben",
+        "ru": "Исправлена ошибка сортировки для самой дешевой заправки",
+        "pt": "bug de sort fixo para gaseificação mais barata",
+        "nl": "sorteerfout voor goedkoopste tankstation opgelost",
+        "fr": "Correction d'un bug de tri pour la station-service la moins chère",
+        "it": "risolto il bug dell'ordinamento per la stazione di servizio più economica",
+        "es": "Se ha corregido el error de ordenación de la estación de servicio más barata",
+        "pl": "naprawiony błąd sortowania dla najtańszej stacji benzynowej",
+        "uk": "виправлено помилку сортування для найдешевшої АЗС",
+        "zh-cn": "修复了最便宜的加油站的排序错误"
       },
-      "2.2.0": {
-        "en": "Design Fix for Admin Dark/Blue Theme",
-        "de": "Design Fix for Admin Dark/Blue Theme",
-        "ru": "Design Fix for Admin Dark/Blue Theme",
-        "pt": "Design Fix for Admin Dark/Blue Theme",
-        "nl": "Design Fix for Admin Dark/Blue Theme",
-        "fr": "Design Fix for Admin Dark/Blue Theme",
-        "it": "Design Fix for Admin Dark/Blue Theme",
-        "es": "Design Fix for Admin Dark/Blue Theme",
-        "pl": "Design Fix for Admin Dark/Blue Theme",
-        "zh-cn": "Design Fix for Admin Dark/Blue Theme"
+      "3.0.4": {
+        "en": "moved misc-data type to vehicle type \nfixed messages rules and added new messages for Adapter Update\nupdate dependencies\nadded lastUpdate_min / lastUpdate_max DP [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "de": "Typ Sonstige Daten zum Typ Fahrzeug verschoben \nNachrichtenregeln korrigiert und neue Nachrichten für Adapter Update hinzugefügt\nAbhängigkeiten aktualisieren\nlastUpdate_min / lastUpdate_max DP hinzugefügt [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "ru": "переместил тип misc-data в тип автомобиля \nисправлены правила сообщений и добавлены новые сообщения для Adapter Update\nобновление зависимостей\nдобавлены lastUpdate_min / lastUpdate_max DP [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "pt": "moveu o tipo de dados errados para o tipo de veículo \nregras de mensagens fixas e adição de novas mensagens para a Actualização do Adaptador\nactualiza as dependências\nadicionado lastUpdate_min / lastUpdate_max DP [edição #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "nl": "misc-data type verplaatst naar voertuigtype \nberichtenregels hersteld en nieuwe berichten toegevoegd voor Adapter Update\nafhankelijkheden bijgewerkt\nlastUpdate_min / lastUpdate_max DP toegevoegd [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "fr": "a déplacé le type de données diverses vers le type de véhicule \na fixé les règles des messages et ajouté de nouveaux messages pour Adapter Update\nMise à jour des dépendances\najout de lastUpdate_min / lastUpdate_max DP [problème #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "it": "spostato il tipo misc-data al tipo veicolo \naggiustato le regole dei messaggi e aggiunto nuovi messaggi per l'aggiornamento dell'adattatore\naggiornamento delle dipendenze\naggiunto lastUpdate_min / lastUpdate_max DP [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "es": "se ha movido el tipo de datos varios al tipo de vehículo \narreglar las reglas de los mensajes y añadir nuevos mensajes para la actualización del adaptador\nactualizar las dependencias\nse ha añadido lastUpdate_min / lastUpdate_max DP [asunto #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "pl": "przeniesienie typu misc-data do typu pojazdu \npoprawiono zasady dotyczące wiadomości i dodano nowe wiadomości dla aktualizacji Adaptera\nzaktualizować zależności\ndodano lastUpdate_min / lastUpdate_max DP [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "uk": "перенесено тип misc-data до типу транспортного засобу \nвиправлено правила повідомлень та додано нові повідомлення для оновлення адаптерів\nоновили залежності\nдодано lastUpdate_min / lastUpdate_max DP [випуск #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)",
+        "zh-cn": "将杂项数据类型移至车辆类型 \n修复了信息规则并为适配器更新添加了新的信息\n更新依赖性\n添加lastUpdate_min / lastUpdate_max DP [issue #91](https://github.com/iobroker-community-adapters/ioBroker.tankerkoenig/issues/91)"
       },
-      "2.1.1": {
-        "en": "New adapter category \"vehicle\", NodeJS v16 testing",
-        "de": "Neue Adapterkategorie \"Fahrzeug\", NodeJS v16 Test",
-        "ru": "Новая категория адаптера \"автомобиль\"",
-        "pt": "Nova categoria de adaptador \"veículo\"",
-        "nl": "Nieuwe adapter categorie \"voertuig\"",
-        "fr": "Nouvel adaptateur catégorie \"véhicule\"",
-        "it": "Nuova categoria di adattatori \"veicolo\"",
-        "es": "Nueva categoría de adaptador \"vehículo\"",
-        "pl": "Nowa kategoria adapterów \"pojazd\"",
-        "zh-cn": "新的适配器类别\"车辆\""
-      },
-      "2.0.11": {
-        "en": "\"ack flag\" and \"wrong type\" issues coming up due to js-controller upgrade 3.3 were fixed",
-        "de": "Probleme mit \"ack flag\" und \"false type\" aufgrund von js-controller upgrade 3.3 wurden behoben",
-        "ru": "Исправлены проблемы с \"флагом подтверждения\" и \"неправильным типом\", возникающие в связи с обновлением js-controller 3.3.",
-        "pt": "Os problemas de \"ack flag\" e \"tipo incorreto\" que surgiam devido à atualização 3.3 do js-controller foram corrigidos",
-        "nl": "\"ack flag\" en \"verkeerde type\" problemen die aan de orde kwamen als gevolg van de js-controller upgrade 3.3 waren opgelost",
-        "fr": "Les problèmes de «drapeau d'ack» et de «type incorrect» à venir en raison de la mise à jour 3.3 du contrôleur js ont été corrigés",
-        "it": "Sono stati risolti i problemi di \"flag ack\" e \"tipo sbagliato\" dovuti all'aggiornamento 3.3 di js-controller",
-        "es": "Se solucionaron los problemas de \"bandera ack\" y \"tipo incorrecto\" debido a la actualización 3.3 del controlador js",
-        "pl": "Naprawiono problemy z flagą ACK i złym typem pojawiające się w związku z aktualizacją js-controller do wersji 3.3",
-        "zh-cn": "修复了由于js-controller升级3.3而出现的\" ack标志\"和\"错误类型\"问题"
-      },
-      "2.0.10": {
-        "en": "\"has no existing object\" issue fixed",
-        "de": "Problem \"hat kein vorhandenes Objekt\" behoben",
-        "ru": "Исправлена проблема \"не имеет существующего объекта\"",
-        "pt": "Problema \"não tem objeto existente\" corrigido",
-        "nl": "\"heeft geen bestaand object\" probleem opgelost",
-        "fr": "Problème \"n'a aucun objet existant\" résolu",
-        "it": "Problema \"non ha oggetto esistente\" risolto",
-        "es": "Problema \"no tiene ningún objeto existente\" solucionado",
-        "pl": "Naprawiono problem \"nie ma istniejącego obiektu\"",
-        "zh-cn": "修复\"没有对象\"的问题"
+      "3.0.3": {
+        "en": "Ukrainian translation added\nadd validation function for ID and Name Input fields\nadd copy from clipboard function for ID Input field\nadded daily min/max prices to all stations and fuel types\nupdate documentation because of new min/max datapoints",
+        "de": "Ukrainische Übersetzung hinzugefügt\nValidierungsfunktion für die Eingabefelder ID und Name hinzugefügt\nFunktion zum Kopieren aus der Zwischenablage für das ID-Eingabefeld hinzugefügt\nTägliche Min-/Max-Preise für alle Tankstellen und Kraftstoffarten hinzugefügt\nDokumentation wegen neuer Min/Max-Datenpunkte aktualisiert",
+        "ru": "Добавлен украинский перевод\nдобавлена функция валидации для полей ввода ID и Name\nдобавлена функция копирования из буфера обмена для поля ввода ID\nдобавлены ежедневные мин/макс цены для всех станций и типов топлива\nобновление документации в связи с новыми точками данных min/max",
+        "pt": "Adicionada tradução ucraniana\nadicionar função de validação para os campos ID e Name Input\nadicionar cópia da função da área de transferência para o campo ID Input\nadicionou preços min/max diários a todas as estações e tipos de combustível\nactualizar documentação por causa de novos datapoints min/max",
+        "nl": "Oekraïense vertaling toegevoegd\nvalidatiefunctie toegevoegd voor ID- en Naam-invoervelden\nkopieerfunctie van klembord toegevoegd voor ID-invoerveld\ndagelijkse min/max-prijzen toegevoegd voor alle stations en brandstoftypen\ndocumentatie bijgewerkt vanwege nieuwe min/max datapunten",
+        "fr": "Ajout d'une traduction en ukrainien\najout d'une fonction de validation pour les champs de saisie ID et Name\najout d'une fonction de copie du presse-papiers pour le champ de saisie ID\najout de prix quotidiens min/max pour toutes les stations et tous les types de carburant\nmise à jour de la documentation en raison des nouveaux points de données min/max",
+        "it": "Aggiunta della traduzione in ucraino\naggiunta funzione di convalida per i campi di input ID e Nome\naggiunta funzione di copia dagli appunti per il campo di inserimento ID\naggiunti i prezzi min/max giornalieri per tutte le stazioni e i tipi di carburante\naggiornamento della documentazione a causa dei nuovi dati min/max",
+        "es": "Se ha añadido la traducción al ucraniano\nañadir función de validación para los campos de entrada ID y Nombre\nañadir la función de copiar desde el portapapeles para el campo de entrada ID\nañadido precios diarios mín/máx a todas las estaciones y tipos de combustible\nactualización de la documentación debido a los nuevos puntos de datos mínimos y máximos",
+        "pl": "Dodano tłumaczenie na język ukraiński\ndodaj funkcję sprawdzania poprawności dla pól wejściowych ID i Nazwa\ndodanie funkcji kopiowania ze schowka dla pola wejściowego ID\ndodano dzienne ceny minimalne/maksymalne dla wszystkich stacji i rodzajów paliwa\naktualizacja dokumentacji z powodu nowych punktów danych min/max",
+        "uk": "Додано український переклад\nдодано функцію перевірки для полів введення ідентифікатора та імені\nдодано функцію копіювання з буфера обміну для поля введення ID\nдодано щоденні мінімальні/максимальні ціни для всіх АЗС та типів палива\nоновлено документацію у зв'язку з появою нових мінімальних/максимальних цін",
+        "zh-cn": "增加乌克兰语翻译\n为ID和姓名输入栏增加验证功能\n为ID输入字段增加了从剪贴板上复制的功能\n为所有加油站和燃料类型添加每日最低/最高价格\n根据新的最小/最大数据点更新文档"
       }
     },
     "titleLang": {
@@ -151,13 +129,14 @@
     "allowInit": true,
     "loglevel": "info",
     "mode": "daemon",
-    "type": "misc-data",
+    "type": "vehicle",
     "compact": true,
     "connectionType": "cloud",
     "dataSource": "poll",
     "stopBeforeUpdate": true,
     "eraseOnUpload": true,
     "materialize": true,
+    "messagebox": true,
     "dependencies": [
       {
         "js-controller": ">=3.0.0"
@@ -168,12 +147,13 @@
         "admin": ">=5.3.3"
       }
     ],
+    "tier": 3,
     "messages": [
       {
         "condition": {
           "operand": "and",
           "rules": [
-            "oldVersion<2.1.1",
+            "oldVersion<3.0.0",
             "newVersion>=3.0.0"
           ]
         },
@@ -191,24 +171,42 @@
           "zh-cn": "重要通知!"
         },
         "text": {
-          "en": "The adapter has been reprogrammed from scratch, which means that the old config is no longer compatible with the new version. Please delete the old adapter before and then reinstall, otherwise the adapter may not work properly!",
-          "de": "Der Adapter wurde von Grund auf neu programmiert, das bedeutet, die alte Config ist nicht mehr kompatibel ist mit der neuen Version. Bitte den alten Adapter vorher löschen und dann neu installieren, da sonst der Adapter nicht richtig funktionieren könnte!",
-          "ru": "Адаптер был перепрограммирован с нуля, что означает, что старый конфиг больше не совместим с новой версией. Пожалуйста, предварительно удалите старый адаптер, а затем установите его заново, иначе адаптер может работать неправильно!",
-          "pt": "O adaptador foi reprogramado de raiz, o que significa que a configuração antiga já não é compatível com a nova versão. Por favor, apague previamente o adaptador antigo e depois reinstale-o, caso contrário o adaptador pode não funcionar correctamente!",
-          "nl": "De adapter is helemaal opnieuw geprogrammeerd, wat betekent dat de oude configuratie niet langer compatibel is met de nieuwe versie. Verwijder eerst de oude adapter en installeer hem daarna opnieuw, anders kan de adapter niet goed werken!",
-          "fr": "L'adaptateur a été reprogrammé à partir de zéro, ce qui signifie que l'ancienne config n'est plus compatible avec la nouvelle version. Veuillez effacer l'ancien adaptateur avant de le réinstaller, sinon l'adaptateur pourrait ne pas fonctionner correctement !",
-          "it": "L'adattatore è stato riprogrammato da zero, il che significa che la vecchia configurazione non è più compatibile con la nuova versione. Eliminare prima il vecchio adattatore e poi reinstallarlo, altrimenti l'adattatore potrebbe non funzionare correttamente!",
-          "es": "El adaptador ha sido reprogramado desde cero, lo que significa que la antigua configuración ya no es compatible con la nueva versión. Por favor, borre previamente el adaptador antiguo y vuelva a instalarlo, de lo contrario el adaptador podría no funcionar correctamente.",
-          "pl": "Adapter został przeprogramowany od podstaw, co oznacza, że stary config nie jest już kompatybilny z nową wersją. Proszę wcześniej usunąć stary adapter, a następnie zainstalować go ponownie, w przeciwnym razie adapter może nie działać prawidłowo!",
-          "uk": "Адаптер був перепрограмований з нуля, що означає, що старий конфіг більше не сумісний з новою версією. Будь ласка, видаліть старий адаптер, а потім встановіть його заново, інакше адаптер може працювати неправильно!",
-          "zh-cn": ""
+          "en": "The adapter has been reprogrammed from scratch, which means the old config is no longer compatible with the new version. The stations must all be created again.",
+          "de": "Der Adapter wurde von Grund auf neu programmiert, was bedeutet, dass die alte Konfiguration nicht mehr mit der neuen Version kompatibel ist. Die Stationen müssen alle neu erstellt werden.",
+          "ru": "Адаптер был перепрограммирован с нуля, а значит, старый конфиг больше не совместим с новой версией. Все станции должны быть созданы заново.",
+          "pt": "O adaptador foi reprogramado do zero, o que significa que a configuração antiga já não é compatível com a nova versão. As estações devem ser todas criadas novamente.",
+          "nl": "De adapter is helemaal opnieuw geprogrammeerd, waardoor de oude config niet meer compatibel is met de nieuwe versie. De stations moeten allemaal opnieuw worden aangemaakt.",
+          "fr": "L'adaptateur a été reprogrammé à partir de zéro, ce qui signifie que l'ancienne configuration n'est plus compatible avec la nouvelle version. Les stations doivent toutes être créées à nouveau.",
+          "it": "L'adattatore è stato riprogrammato da zero, il che significa che la vecchia configurazione non è più compatibile con la nuova versione. Le stazioni devono essere create di nuovo.",
+          "es": "El adaptador ha sido reprogramado desde cero, lo que significa que la antigua configuración ya no es compatible con la nueva versión. Hay que volver a crear todas las estaciones.",
+          "pl": "Adapter został przeprogramowany od nowa, co oznacza, że stara konfiguracja nie jest już kompatybilna z nową wersją. Wszystkie stacje muszą być utworzone od nowa.",
+          "uk": "Адаптер було перепрограмовано з нуля, а це означає, що стара конфігурація більше не сумісна з новою версією. Всі станції повинні бути створені заново.",
+          "zh-cn": "适配器已经从头开始重新编程，这意味着旧的配置不再与新版本兼容。这些站必须全部重新创建。"
+        },
+        "link": "https://forum.iobroker.net/topic/60140/tankerk%C3%B6nig-adapter-komplett-umbau",
+        "linkText": {
+          "en": "please read forum post before update",
+          "de": "Bitte lese den Forenbeitrag vor dem Update",
+          "ru": "пожалуйста, прочитайте сообщение на форуме перед обновлением",
+          "pt": "por favor lê a mensagem do fórum antes de actualizares",
+          "nl": "lees a.u.b. de forumpost vóór de update",
+          "fr": "S'il te plaît, lis le post du forum avant la mise à jour",
+          "it": "Leggi il post del forum prima di aggiornare",
+          "es": "por favor, lee el post del foro antes de actualizar",
+          "pl": "przeczytaj post na forum przed aktualizacją",
+          "uk": "будь ласка, прочитайте повідомлення на форумі перед оновленням",
+          "zh-cn": "更新前请阅读论坛帖子"
         },
         "level": "warn",
         "buttons": [
-          "ok"
+          "agree",
+          "cancel"
         ]
       }
-    ]
+    ],
+    "adminUI": {
+      "config": "materialize"
+    }
   },
   "protectedNative": [
     "apikey"
@@ -216,9 +214,13 @@
   "native": {
     "synctime": 5,
     "resetValues": false,
-    "noLogs": true,
     "apikey": "",
-    "station": []
+    "station": [],
+    "combinedOptions": {
+      "closed": "Station Closed",
+      "noPrice": "No Prices",
+      "notFound": "Station Not Found"
+    }
   },
   "objects": [],
   "instanceObjects": [

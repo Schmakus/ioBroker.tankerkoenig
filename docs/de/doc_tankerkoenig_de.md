@@ -17,7 +17,7 @@ Der Adapter verwendet die Seite `prices.php`, welche beim Quellserver von tanker
 
 ## Einstellungen
 ### API-Key
-Der API Schlüssel ist auf der [Seite von Tankerkönig](https://creativecommons.tankerkoenig.de/#about) erhältlich. Die 36stellige Zeichenkette muss hier eingetragen werden.
+Der API Schlüssel ist auf der [Seite von Tankerkönig](https://creativecommons.tankerkoenig.de/#about) erhältlich. Die 36-stellige Zeichenkette muss hier eingetragen werden.
 
 ### Tankstellen
 Es können bis zu 10 Tankstellen abgefragt werden. Dazu ist die Eingabe der Tankstellen ID nötig. Die ID für jede Tankstelle erhält man auf tankerkoenig.de. Sie ist ebenfalls 
@@ -30,7 +30,9 @@ Zusätzlich kann ein eigener Name für die Station hinterlegt werden.
 Es gibt 2 Möglichkeiten, die ID in das Feld zu kopieren:
 - Du markierst die ID und kopierst sie mit Strg+C oder du klickst mit der rechten Maustaste auf Kopieren und fügst sie dann in das Feld ein.
 - Du kannst auch auf die Schaltfläche `Copy` klicken, dann wird der gesamte Inhalt kopiert, und du kannst ihn dann entweder direkt in das Feld einfügen. 
-  Oder du klickst auf die Schaltfläche `Paste`, dann wird nur die ID in das Feld eingefügt.
+  Oder du klickst auf die Schaltfläche `Paste`, dann wird nur die ID in das Feld eingefügt. 
+
+**Dazu muss man aber zulassen, dass der Browser auf die Zwischenablage zugreifen darf.**
 
 ![alt text](../img/tankerkoenigStationFinder_copyId.png "Screenshot Settings")
 
@@ -47,21 +49,20 @@ Wenn eine Tankstelle keine Preise für E5, E10 oder Diesel liefert, z. B. bei e
 
 ![alt text](../img/state_quality.png "Screenshot Settings")
 
-### Log minimieren
-Um Schreibzugriffe im Log (z.B. auf empfindliche SD-Karten) zu minimieren, kann ein Haken gesetzt werden.
-
 ## Aktivierung
 Der Adapter läuft als Daemon (nicht im Schedule Modus) und startet regulär alle fünf Minuten. Die Daten des Quellfeeds werden vom Server bei tankerkoenig.de nur alle 4min aktualisiert, daher macht eine häufigere Abfrage der Daten keinen Sinn und verursacht nur überflüssigen Datenverkehr und kostet Ressourcen. Größere Intervalle sind jederzeit einstellbar.
 
 ##  Datenpunkte
 Die Datenpunkte werden dynamisch erstellt, das heißt, wen man eine Station anlegt werden Datenpunkte dazu angelegt (Maximal 10 Stationen)
-Wenn man eine Station löscht, werden auch die nicht mehr benötigten Datenpunkte gelöscht.
 ![alt text](../img/tankerkoenigNewDP.png "Screenshot Settings")
 Unter den verschiedenen Kraftstoffart werden die folgenden Datenpunkte:
 * `feed` (Preis mit drei Dezimalstellen als Number)
 * `short` (Preis mit zwei Dezimalstellen (ungerundet) als String)
 * `3rd` (dritte Dezimalstelle des Preises zur Darstellung der Hochzahl in VIS)
-* `combined` (fertig HTML formatiert mit Preis und hochgestellter dritter Dezimalstelle oder ggf. Öffnungsstatus ["closed"/"not found"] zur einfachen Darstellung mit VIS HTML Widget)
+* `combined` (fertig HTML formatiert mit Preis und hochgestellter dritter Dezimalstelle oder ggf. Öffnungsstatus [`closed`/`not found`] zur einfachen Darstellung mit VIS HTML Widget)
+
+Unter jeder Kraftstoffart gibt es noch einen weiteren Ordner `minmax` in dem die Datenpunkte für die Min und Max Preise der Tankstelle angelegt werden. Sie werden nur für den 
+einen Tag gespeichert und werden am nächsten Tag wieder auf 0 gesetzt und neu befüllt.
 
 Außerdem werden noch fünf Datenpunkte auf in der jeweiligen Station erstellt:
 * `discount` (Rabatt in Euro / Prozent als Number)
